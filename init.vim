@@ -130,7 +130,7 @@ noremap ; :
 
 " Save & quit
 noremap Q :q<CR>
-noremap <C-q> :qa<CR>
+noremap <C-q> :q!<CR>
 noremap S :w<CR>
 
 " Open the vimrc file anytime
@@ -336,7 +336,7 @@ func! CompileRunGcc()
 		set splitbelow
 		exec "!g++ -std=c++11 % -Wall -o %<"
 		:sp
-		:res -15
+		:res +5
 		:term ./%<
 	elseif &filetype == 'java'
 		exec "!javac %"
