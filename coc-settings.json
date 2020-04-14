@@ -206,7 +206,17 @@
 			"initializationOptions": {
 				 "cache": {
 					 "directory": "/tmp/ccls"
-				 }
+				 },
+				 "completion": {
+					 "detailedLabel": true
+				 },
+				 "clang":{
+					 "extraArgs":[
+						 "-isystem",
+						 "/Library/Developer/CommandLineTools/usr/include/c++/v1",
+					 ],
+					 "resourceDir": "/usr/local/Cellar/llvm/10.0.0_1/lib/clang/10.0.0",
+				 },
 			 }
 		},
 		"dls": {
